@@ -1,0 +1,135 @@
+@font-face {
+    font-family: stetica-regular;
+    src: url(../Font/AA\ Stetica\ Regular.otf);
+}
+
+@font-face {
+    font-family: despair-bold;
+    src: url(../Font/DespairDisplay-Bold.otf);
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    background: url(../Img/Лого.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(220, 220, 220);
+    height: auto;
+    width: 20%;
+    aspect-ratio: 2/1;
+}
+
+.nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: calc(0.3em + 1vw);
+    color: #DCDCDC;
+    flex-grow: 1;
+}
+
+.nav-item {
+    font-family: stetica-regular;
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+    transition: text-shadow 0.3s;
+}
+
+.nav-item:hover {
+    text-shadow: 0 10px 20px rgb(220, 220, 220);
+}
+
+.bg-line {
+    background: url(../Img/Главная.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/1;
+    margin: 25px 0;
+}
+
+.head {
+    font-size: calc(0.5rem + 5vw);
+    letter-spacing: 1rem;
+    text-align: center;
+    color: #DCDCDC;
+    font-family: despair-bold;
+}
+
+.line {
+    display: flex;
+    margin: 25px auto;
+    width: 80vw;
+}
+
+.img1 {
+    object-fit: scale-down;
+    flex: 1 1 50%;
+}
+
+.text1 {
+    color: white;
+    font-size: calc(0.3em + 1vw);
+    font-family: stetica-regular;
+    margin: 0px 10px 10px 20px;
+    flex: 1 1 50%;
+}
+
+.img2 {
+    object-fit: scale-down;
+    flex: 1 1 50%;
+}
+
+.img2 img, .img1 img {
+    width: 100%;
+    height: auto;
+}
+
+.text2 {
+    color: white;
+    font-size: calc(0.3em + 1vw);
+    font-family: stetica-regular;
+    margin: 0px 10px 10px 20px;
+    flex: 1 1 50%;
+}
+
+footer {
+    color: #fff0f5;
+    display: flex;
+    width: 100%;
+    background-color: #333;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.footer-nav-item {
+    font-size: calc(0.2em + 1vw);
+}
+
+.icons {
+    display: flex;
+    width: 30vw;
+    justify-content: space-around;
+    align-items: center;
+}
